@@ -21,7 +21,7 @@
       </p>
     </div>
     <div class="control">
-      <button class="button is-large" @click="searchAddressForCep">
+      <button class="button is-large is-primary" @click="searchAddressForCep">
         Buscar
       </button>
     </div>

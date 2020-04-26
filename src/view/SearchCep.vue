@@ -1,13 +1,13 @@
 <template>
   <div class="container is-fullheight is-fullcenter">
-    <div class="title is-1">Buscador de endereços</div>
+    <div class="title is-1 is-text-white">Buscador de endereços</div>
     <search-cep-form @found="onFoundCep" />
     <cep-card
       v-show="address || history.length > 0"
       isTitle
       :address="address"
     />
-    <hr />
+    <hr class="divider" />
     <history-cep-found :history="history" @clear="onCleanHistory" />
   </div>
 </template>
@@ -51,5 +51,9 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.divider {
+  border: 0.5px solid white;
+  width: 100%;
 }
 </style>

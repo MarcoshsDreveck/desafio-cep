@@ -1,7 +1,11 @@
 <template>
   <div class="is-fullwidth">
-    <a class="is-pulled-right" @click="$emit('clear')">Limpar histórico</a>
-    <div class="title is-4">Histórico de buscas ({{ qtyAddress }})</div>
+    <a class="is-pulled-right is-text-primary" @click="$emit('clear')"
+      >Limpar histórico</a
+    >
+    <div class="title is-4 is-text-white">
+      Histórico de buscas ({{ qtyAddress }})
+    </div>
     <div class="is-fullwidth is-fixed">
       <cep-card
         v-for="(address, index) in limitedHistory"
