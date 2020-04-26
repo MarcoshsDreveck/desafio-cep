@@ -36,7 +36,6 @@ export default {
       if (address && address.cep) this.history.unshift(address);
     },
     onCleanHistory() {
-      console.log("entrou");
       this.history = [];
     }
   }
