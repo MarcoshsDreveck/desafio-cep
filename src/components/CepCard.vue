@@ -1,7 +1,8 @@
 <template>
   <div class="box is-fullwidth" :class="{ 'is-bold': isTitle }">
     <p v-if="typeof address === 'object' && address.cep">
-      {{ address.logradouro }}, {{ address.bairro }}, {{ address.localidade }} -
+      {{ address.logradouro }}, {{ address.bairro }},
+      {{ address.localidade || address.cidade }} -
       {{ address.uf }}
     </p>
     <p v-else class="is-danger">
